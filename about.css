@@ -1,0 +1,229 @@
+/* 
+header
+about
+buttom
+footer
+media
+*/
+:root{
+    --color1:#cf9902;
+    --color2:red;
+    --color3:black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+*::selection{
+    background-color: gray;
+}
+/* star header */
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+.header .container h2{
+    font-size: 35px;
+    color: var(--color2);
+    margin-right: 80px;
+}
+.header .container .link ul{
+    list-style: none;
+    display: flex;
+}
+.header .container .link ul li{
+    margin-left: 80px;
+    margin-right: 40px;
+}
+.header .container a{
+    color: var(--color3);
+    font-weight: 500;
+    transition: .6s;
+}
+.header .container .a1:first-of-type{
+    color: var(--color2);
+}
+.header .container a:hover{
+    color: var(--color2);
+}
+/* end header */
+/* start about */
+.about .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vh 50px 6vh 50px;
+}
+.about .container .img{
+    background-image: url(img/factory.jpg);
+    background-size: cover;
+    width: 650px;
+    height: 90vh;
+    border-radius: 20px;
+    transition: .30s;
+}
+.about .container .img:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 20px black;
+}
+.about .container .text{
+    height: auto;
+    width: 350px;
+}
+.about .container .text h2{
+    font-size: 50px;
+    padding-bottom: 80px;
+}
+.about .container .text h3{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.about .container .text p{
+    font-size: 17px;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.726);
+}
+/* end about */
+/* start buttom */
+.buttom {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 80px 0;
+}
+.buttom button{
+    background-color: rgba(255, 0, 0, 0);
+    padding: 10px 20px;
+    font-size: 20px;
+    border-color: var(--color1);
+    transition: .5s;
+}
+.buttom button:hover{
+    background-color: var(--color2);
+    transform: scale(1.1);
+    border-radius: 12px;
+}
+/* end buttom */
+/* star footer */
+.footer .container{
+    background-color: var(--color1);
+    width: 100%;
+    height: 60px;
+}
+.footer .text{
+    display: flex;
+    margin-left: 20%;
+    padding-top: 25px;
+}
+.footer .text span{
+    margin-left: 50%;
+    margin-right: 10px;
+}
+.footer .text i{
+    margin-left: 10px;
+    font-size: 19px;
+}
+/* end footer */
+/* start media */
+@media (max-width:699px){
+    .header .container h2{
+        font-size: 19px;
+        margin-right: 8px;
+    }
+    .header .container .link ul li{
+        margin-left: 5px;
+        margin-right: 15px;
+    }
+    .header .container a{
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .about .container{
+        display: grid;
+        padding: 4vh 0;
+        margin-right: 5%;
+    }
+    .about .container .img{
+        background-image: url(img/factory1.jpg);
+        width: 90%;
+        height: 75vh;
+    }
+    .about .container .text{
+        height: auto;
+        width: 90%;
+        text-align: center;
+    }
+    .about .container .text h2{
+        font-size: 35px;
+        padding-bottom: 30px;
+        padding-top: 15px;
+    }
+    .about .container .text h3{
+        font-size: 22px;
+        padding-bottom: 15px;
+    }
+    .about .container .text p{
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.712);
+    }
+    .footer .container{
+        height: 70px;
+    }
+    .footer .text{
+        margin-left: 10%;
+        padding-top: 30px;
+    }
+    .footer .text span{
+        margin-left: 20%;
+        margin-right: 6px;
+    }
+    .footer .text i{
+        margin-left: 7px;
+        font-size: 18px;
+    }
+}
+@media (min-width:700px) and (max-width:950px){
+    .header .container h2{
+        font-size: 30px;
+        margin-right: 45px;
+    }
+    .header .container .link ul li{
+        margin-left: 55px;
+        margin-right: 25px;
+    }
+    .header .container a{
+        font-size: 15px;
+    }
+    .about .container{
+        display: grid;
+        margin-right: 5%;
+    }
+    .about .container .img{
+        width: 98%;
+        height: 85vh;
+        border-radius: 20px;
+        transition: .30s;
+    }
+    .about .container .text{
+        height: auto;
+        width: 90%;
+    }
+    .about .container .text h2{
+        font-size: 50px;
+        padding-bottom: 40px;
+        padding-top: 20px;
+    }
+    .about .container .text h3{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .about .container .text p{
+        font-size: 17px;
+        line-height: 1.8;
+        color: rgba(0, 0, 0, 0.726);
+    }
+}
+/* end media */
